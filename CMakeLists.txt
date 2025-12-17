@@ -16,6 +16,8 @@ set(CMAKE_PROJECT_NAME stm32_uofu)
 # Enable compile command to ease indexing with e.g. clangd
 set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
 
+include(cmake/gcc-arm-none-eabi.cmake)
+
 # Core project settings
 project(${CMAKE_PROJECT_NAME})
 message("Build type: " ${CMAKE_BUILD_TYPE})
