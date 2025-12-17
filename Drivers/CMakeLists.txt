@@ -63,3 +63,5 @@ target_sources(STM32_Discovery PRIVATE
     ${CMAKE_SOURCE_DIR}/Drivers/BSP/STM32F072B-Discovery/stm32f072b_discovery_gyroscope.c
 )
 target_link_libraries(STM32_Discovery PRIVATE STM32_Drivers)
+
+add_subdirectory(SEGGER)
