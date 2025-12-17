@@ -53,3 +53,13 @@ if((CMAKE_C_STANDARD EQUAL 90) OR (CMAKE_C_STANDARD EQUAL 99))
     message(ERROR "Generated code requires C11 or higher")
 endif()
 
+add_library(STM32_Discovery OBJECT)
+target_include_directories(STM32_Discovery PUBLIC
+    BSP/STM32F072B-Discovery
+)
+target_sources(STM32_Discovery PRIVATE
+    ${CMAKE_SOURCE_DIR}/Drivers/BSP/STM32F072B-Discovery/stm32f072b_discovery.c
+    ${CMAKE_SOURCE_DIR}/Drivers/BSP/STM32F072B-Discovery/stm32f072b_discovery_eeprom.c
+    ${CMAKE_SOURCE_DIR}/Drivers/BSP/STM32F072B-Discovery/stm32f072b_discovery_gyroscope.c
+)
+target_link_libraries(STM32_Discovery PRIVATE STM32_Drivers)
