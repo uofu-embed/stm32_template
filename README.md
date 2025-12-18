@@ -9,6 +9,7 @@ https://code.visualstudio.com/
 Install these VSCode extensions
 https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack
 https://marketplace.visualstudio.com/items?itemName=stmicroelectronics.stm32-vscode-extension
+https://marketplace.visualstudio.com/items?itemName=marus25.cortex-debug
 
 Some additional instructions for WSL on Windows.
 
