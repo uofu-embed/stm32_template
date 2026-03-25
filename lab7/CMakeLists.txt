@@ -1,6 +1,7 @@
 # Add C source files here.
 add_executable(lab7
     Src/lab7.c
+    Src/motor.c
     Src/stm32f0xx_hal_msp.c
     Src/stm32f0xx_it.c
 )
